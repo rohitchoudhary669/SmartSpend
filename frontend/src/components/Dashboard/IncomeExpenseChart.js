@@ -34,7 +34,7 @@ const IncomeExpenseChart = ({ data }) => {
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="month" />
           <YAxis />
-          <Tooltip formatter={(value) => `$${value.toFixed(2)}`} />
+          <Tooltip formatter={(value) => `₹${value.toFixed(2)}`} />
           <Legend />
           <Bar dataKey="income" fill="#4caf50" name="Income" />
           <Bar dataKey="expenses" fill="#f44336" name="Expenses" />

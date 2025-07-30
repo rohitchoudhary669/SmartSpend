@@ -9,19 +9,19 @@ const StatsCards = ({ walletBalance, totalIncome, totalExpenses, transactionCoun
   const stats = [
     {
       title: 'Wallet Balance',
-      value: `$${walletBalance.toFixed(2)}`,
+      value: `₹${walletBalance.toFixed(2)}`,
       icon: <AccountBalanceWalletIcon />,
       color: '#2196f3'
     },
     {
       title: 'Total Income',
-      value: `$${totalIncome.toFixed(2)}`,
+      value: `₹${totalIncome.toFixed(2)}`,
       icon: <TrendingUpIcon />,
       color: '#4caf50'
     },
     {
       title: 'Total Expenses',
-      value: `$${totalExpenses.toFixed(2)}`,
+      value: `₹${totalExpenses.toFixed(2)}`,
       icon: <TrendingDownIcon />,
       color: '#f44336'
     },

@@ -52,9 +52,9 @@ const FriendList = ({ friends, onUpdate }) => {
 
   const getBalanceDisplay = (balance) => {
     if (balance > 0) {
-      return <Chip label={`Owes you: $${balance.toFixed(2)}`} color="success" size="small" />;
+      return <Chip label={`Owes you: ₹${balance.toFixed(2)}`} color="success" size="small" />;
     } else if (balance < 0) {
-      return <Chip label={`You owe: $${Math.abs(balance).toFixed(2)}`} color="error" size="small" />;
+      return <Chip label={`You owe: ₹${Math.abs(balance).toFixed(2)}`} color="error" size="small" />;
     } else {
       return <Chip label="Settled up" color="default" size="small" />;
     }

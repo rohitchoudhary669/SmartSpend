@@ -42,7 +42,7 @@ const Header = () => {
         
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
           <Typography variant="body1">
-            Balance: ${user?.walletBalance?.toFixed(2) || '0.00'}
+            Balance: ₹{user?.walletBalance?.toFixed(2) || '0.00'}
           </Typography>
           
           <IconButton

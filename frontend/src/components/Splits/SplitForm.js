@@ -106,7 +106,7 @@ const SplitForm = ({ open, onClose, onSubmit, friends }) => {
               error={!!errors.amount}
               helperText={errors.amount}
               InputProps={{
-                startAdornment: <InputAdornment position="start">$</InputAdornment>,
+                startAdornment: <InputAdornment position="start">₹</InputAdornment>,
               }}
             />
           </Grid>
@@ -202,10 +202,10 @@ const SplitForm = ({ open, onClose, onSubmit, friends }) => {
                   Split amount per person:
                 </Typography>
                 <Typography variant="h6">
-                  ${calculateSplitAmount()}
+                  ₹{calculateSplitAmount()}
                 </Typography>
                 <Typography variant="caption" color="textSecondary">
-                  (${formData.amount} ÷ {formData.splitWith.length + 1} people)
+                  (₹{formData.amount} ÷ {formData.splitWith.length + 1} people)
                 </Typography>
               </Box>
             </Grid>

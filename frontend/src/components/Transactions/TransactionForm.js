@@ -133,7 +133,7 @@ const TransactionForm = ({ open, onClose, onSubmit, transaction = null }) => {
               error={!!errors.amount}
               helperText={errors.amount}
               InputProps={{
-                startAdornment: <InputAdornment position="start">$</InputAdornment>,
+                startAdornment: <InputAdornment position="start">₹</InputAdornment>,
               }}
             />
           </Grid>
